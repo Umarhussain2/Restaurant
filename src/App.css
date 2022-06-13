@@ -1,38 +1,212 @@
-.App {
-  text-align: center;
-}
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    background-color: #1b1b1b;
+    padding:15px 20px 15px 100px;
+    align-items: center;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
+.eps{
+    font-size: 10px;
+    color: white;
+}
+.bluepost{
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(250, 249, 245);
+}
+.ops{
+    border: none;
+    background-color:#1b1b1b;
+    padding: 10px;
+    font-weight: 600;
+    color:white;
+    
+}
+.home{
+background-image: url(https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?cs=srgb&dl=pexels-pixabay-260922.jpg&fm=jpg);
+height: 600px;
+background-size: cover;
+opacity: 85%;
+color:azure;
+font-weight: 200;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+}
+.homecontent{
+    margin-top:0px;
+    padding-top: 80px;
+    padding-left:30px;
+    display: flex;
+    justify-content: space-around;
+}
+.img{
+    opacity: 90%;
+}
+.login-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(71, 30, 3);
+    height: 500px;
+ 
   }
-}
+  
+  .login-button{
+    height: 35px;
+    width: 80px;
+    font-size: medium;
+    background-color: rgb(31, 28, 28);
+    color: #e7dbdb;
+    border: 1px solid rgb(10, 10, 10) ;
+    border-radius: 5px;
+  }
+  
+  .login-button:hover{
+    background-color: #f1f1f1;
+    color: rgba(61, 58, 58, 0.856);
+    border:  1px solid #d6c0c0;
+  }
+  
+  .box{
+    height: 35px;
+    width: 300px;
+    border-radius: 5px;
+    border: 2px solid rgb(162, 202, 238);
+  }
+  
+  .sublogin-container{
+    background-color: rgba(37, 35, 35, 0.966);
+    width: 300px;
+    height: 350px;
+    padding: 20px;
+    border-radius: 14px;
+  }
+  .back{
+      background-color: rgb(203, 250, 250);
+  }
+  
+.home-wrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top:20px;
+  overflow-wrap: break-word;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.product-item-wrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-top:1px solid rgb(218,218,218);
+  margin: auto;
+  padding: 10px;
+}
+.product-details{
+  width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+}
+
+.product-details>h4{
+  margin-bottom: 11px;
+}
+
+.product-price{
+  margin-bottom: 11px;
+}
+
+.product-description{
+  color: #888888;
+  width: 100%;
+  margin-bottom: 11px;
+}
+
+.product-btn{
+  margin-top: 10px;
+  color:white;
+  background-color: rgb(17, 16, 16);
+  border: none;
+  width:120px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.product-btn:hover{
+  cursor: pointer;
+  font-size: 21;
+  width: 125px;
+}
+
+.product-image{
+  width: 150px;
+  height: 150px;
+}
+.product-image>img{
+  width: 150px;
+  height: 150px;
+}
+.placeholder-wrapper{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.product-btn-placeholder{
+  margin-top: 10px auto auto auto;
+  color:white;
+  background-color: rgb(32, 31, 31);
+  border: none;
+  width:130px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.product-btn-placeholder:hover{
+  cursor: pointer;
+  font-size: 21px;
+  width: 135px;
+}
+
+@media(max-width:320px){
+  .product-image{
+      margin-top:10px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.item-image{
+  
+  height: 300px;
+  width: 300px;
+  padding: 100px 100px 0px 100px;  /* margin: 25px 0px 0px 25px; */
+  /* border-radius: 50%; */
+}
+
+.item-link{
+  text-decoration: none;
+  color: aqua;
+  
+}
+
+.item-name{
+  text-align: center;
+  color: black !important ; 
+  
+}
+.cart{
+  color: aqua ;
+  padding-right: 40px;
+  
+}
+.log{
+  padding-left: 1000px;
+justify-content: center;  
 }
